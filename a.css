@@ -1,0 +1,67 @@
+*
+{
+	box-sizing: border-box;
+}
+body
+{
+	background-color: lightgrey;
+}
+h1
+{
+	text-align: center;
+}
+p:hover
+{
+	background-color: blue;
+}
+.row
+{
+	width:100%;
+}
+.col-ld-3 , .col-md-6 ,.col-sm-12
+{
+	background-color: lightgreen;
+	float: left;
+	padding: 10px;
+	border: 1px solid black;
+}
+.cd
+{
+	background-color: white;
+	height: 50%;
+	width: 30%;
+	border: 2px solid black;
+	text-align: center;
+	background-color: black;
+	color: white;
+	float: right;
+}
+.cd:hover
+{
+	background-color: red;
+}
+.k
+{
+	clear:right;
+}
+@media (min-width: 992px)
+{
+	.col-ld-3
+	{
+		width:33.33%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px)
+{
+	.col-md-6
+	{
+		width:50%;
+	}
+}
+@media (max-width: 767px)
+{
+	.col-sm-12
+	{
+		width: 100%;
+	}
+}
